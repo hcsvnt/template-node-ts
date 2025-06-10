@@ -1,10 +1,13 @@
 {
     "compilerOptions": {
+        "allowImportingTsExtensions": true,
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
-        "target": "ES2020",
-        "sourceMap": true,
+        "noEmit": true,
         "outDir": "./dist",
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES2020",
     },
     "include": [
         "src/**/*.ts"

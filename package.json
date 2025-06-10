@@ -1,21 +1,32 @@
 {
     "name": "ts-starter",
     "version": "1.0.0",
-    "description": "",
+    "description": "A modern Express starter with TypeScript, ESM and Hot Reload.",
     "type": "module",
     "main": "index.js",
     "scripts": {
         "start": "node --env-file=.env ./dist/index.js",
+        "dev": "nodemon",
         "build": "tsc",
         "publish": "npm publish --access public",
         "update": "npm version patch && npm run build && npm run publish",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
+    "author": {
+        "name": "Mateusz Hallala",
+        "email": "mateuszhallala@gmail.com",
+        "url": "https://github.com/hcsvnt"
+    },
     "license": "ISC",
     "devDependencies": {
-        "@types/node": "^20.11.19",
-        "typescript": "^5.3.3"
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.0.0",
+        "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "express": "^5.1.0"
     }
 }
