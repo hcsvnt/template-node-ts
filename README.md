@@ -82,3 +82,23 @@ Currently, this script echoes an error message and exits. You should replace thi
 *   **ESM (ECMAScript Modules):** Modern module system for JavaScript.
 *   **Nodemon:** Utility that monitors for any changes in your source and automatically restarts your server.
 *   **ts-node:** TypeScript execution environment and REPL for Node.js.
+*   **ESLint:** A tool for identifying and fixing problems in JavaScript and TypeScript code.
+*   **TypeScript-ESLint:** Integrates TypeScript with ESLint to provide linting with type information.
+
+## Linting
+
+To ensure code quality and consistency, this project uses ESLint with TypeScript support. The linter is configured to enforce strict type-checking and common best practices.
+
+### Running the Linter
+
+To run the linter, use the following command:
+
+```bash
+npm run lint
+```
+
+This will lint all files in the `src` directory and ignore files specified in the `.eslintignore` file (e.g., the `dist` directory).
+
+### Customizing Lint Rules
+
+You can customize the linting rules by editing the `eslint.config.js` file in the project root. For example, you can add or modify rules under the `rules` section.
