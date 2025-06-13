@@ -5,9 +5,11 @@
 /.pnp
 .pnp.js
 
+# built files
+/dist
+
 # misc
 .DS_Store
-
 
 # debug
 npm-debug.log*
